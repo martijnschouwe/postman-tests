@@ -3,7 +3,6 @@
 	"name": "Sting-Recommendations",
 	"description": "",
 	"order": [
-		"c003e8ef-0228-423c-b8ab-1d2c866adafe",
 		"c9f6f31f-ead2-d2b4-850d-e8673d012b1d"
 	],
 	"folders": [],
@@ -13,7 +12,7 @@
 	"public": false,
 	"requests": [
 		{
-			"id": "c003e8ef-0228-423c-b8ab-1d2c866adafe",
+			"id": "c9f6f31f-ead2-d2b4-850d-e8673d012b1d",
 			"headers": "Content-Type: application/json\n",
 			"url": "http://localhost:8081/recommendations/users/1",
 			"preRequestScript": null,
@@ -22,11 +21,11 @@
 			"data": [],
 			"dataMode": "raw",
 			"version": 2,
-			"tests": "tests[\"Status code is 201\"] = responseCode.code === 201;\n",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Test if userId property exists\"] = jsonData.userId !== undefined;\ntests[\"Test if userId property contains 1\"] = jsonData.userId === \"1\";\n\ntests[\"Test if recommendedProducts property exists\"] = jsonData.recommendedProducts !== undefined;\ntests[\"Test if recommendedProducts property contains 3 productIds\"] = jsonData.recommendedProducts.length === 3;\n\n//order test\ntests[\"Test if recommendedProducts property contains 2888356-grijs_melee\"] = jsonData.recommendedProducts[0] === \"2888356-grijs_melee\";\ntests[\"Test if recommendedProducts property contains 2888356-grijs_melee2\"] = jsonData.recommendedProducts[1] === \"2888356-grijs_melee2\";\ntests[\"Test if recommendedProducts property contains 2888356-grijs_melee3\"] = jsonData.recommendedProducts[2] === \"2888356-grijs_melee3\";",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1463646257870,
-			"name": "http://localhost:8081/recommendations/users/1",
+			"time": 1463649709048,
+			"name": "Recommendations for User",
 			"description": "",
 			"collectionId": "e8e643aa-a4d6-4257-84b8-eb1557935684",
 			"responses": [],
