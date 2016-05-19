@@ -22,7 +22,7 @@
 			"data": [],
 			"dataMode": "raw",
 			"version": 2,
-			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
+			"tests": "tests[\"Status code is 201\"] = responseCode.code === 201;\n",
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1463646257870,
@@ -30,27 +30,6 @@
 			"description": "",
 			"collectionId": "e8e643aa-a4d6-4257-84b8-eb1557935684",
 			"responses": [],
-			"rawModeData": "{\n    \"size\" : 5000\n}"
-		},
-		{
-			"id": "c9f6f31f-ead2-d2b4-850d-e8673d012b1d",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://localhost:8081/recommendations/users/1",
-			"pathVariables": {},
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "e8e643aa-a4d6-4257-84b8-eb1557935684",
-			"data": [],
-			"dataMode": "raw",
-			"name": "Recommendations for User",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1463647673910,
-			"version": 2,
-			"responses": [],
-			"tests": "tests[\"Status code is 200\"] = responseCode.code === 201;\n",
-			"currentHelper": "normal",
-			"helperAttributes": {},
 			"rawModeData": "{\n    \"size\" : 5000\n}"
 		}
 	]
