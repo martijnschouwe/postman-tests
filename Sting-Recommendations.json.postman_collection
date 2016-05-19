@@ -4,8 +4,7 @@
 	"description": "",
 	"order": [
 		"c003e8ef-0228-423c-b8ab-1d2c866adafe",
-		"3161e2d8-15a5-8110-a2ce-441650746e6d",
-		"9654675e-62e5-21b2-5b97-089af5089419"
+		"c9f6f31f-ead2-d2b4-850d-e8673d012b1d"
 	],
 	"folders": [],
 	"timestamp": 1463582331252,
@@ -13,48 +12,6 @@
 	"remoteLink": "https://www.getpostman.com/collections/cfc605fa32edf3da8e05",
 	"public": false,
 	"requests": [
-		{
-			"id": "3161e2d8-15a5-8110-a2ce-441650746e6d",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://localhost:8081/recommendations/users/1",
-			"pathVariables": {},
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "e8e643aa-a4d6-4257-84b8-eb1557935684",
-			"data": [],
-			"dataMode": "raw",
-			"name": "Recommendations for User",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1463646272911,
-			"version": 2,
-			"responses": [],
-			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n    \"size\" : 5000\n}"
-		},
-		{
-			"id": "9654675e-62e5-21b2-5b97-089af5089419",
-			"headers": "Content-Type: application/json\n",
-			"url": "http://localhost:8081/recommendations/users/1",
-			"pathVariables": {},
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "e8e643aa-a4d6-4257-84b8-eb1557935684",
-			"data": [],
-			"dataMode": "raw",
-			"name": "Recommendations for User",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1463647581750,
-			"version": 2,
-			"responses": [],
-			"tests": "tests[\"Status code is 200\"] = responseCode.code === 201;\n",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n    \"size\" : 5000\n}"
-		},
 		{
 			"id": "c003e8ef-0228-423c-b8ab-1d2c866adafe",
 			"headers": "Content-Type: application/json\n",
@@ -73,6 +30,27 @@
 			"description": "",
 			"collectionId": "e8e643aa-a4d6-4257-84b8-eb1557935684",
 			"responses": [],
+			"rawModeData": "{\n    \"size\" : 5000\n}"
+		},
+		{
+			"id": "c9f6f31f-ead2-d2b4-850d-e8673d012b1d",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8081/recommendations/users/1",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e8e643aa-a4d6-4257-84b8-eb1557935684",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Recommendations for User",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1463647673910,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 201;\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
 			"rawModeData": "{\n    \"size\" : 5000\n}"
 		}
 	]
