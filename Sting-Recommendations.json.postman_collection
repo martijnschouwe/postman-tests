@@ -1,0 +1,57 @@
+{
+	"id": "846188c1-358f-a9eb-2273-b72aad9af46e",
+	"name": "Sting-Recommendations",
+	"description": "",
+	"order": [
+		"2e493fbe-b010-48a1-edaf-c54d10d9a505",
+		"38d7231d-0cff-171f-f278-ed0dbefc30c7"
+	],
+	"folders": [],
+	"timestamp": 1463582331252,
+	"owner": "",
+	"remoteLink": "https://www.getpostman.com/collections/cfc605fa32edf3da8e05",
+	"public": false,
+	"requests": [
+		{
+			"id": "2e493fbe-b010-48a1-edaf-c54d10d9a505",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8081/recommendations/users/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1463646257870,
+			"name": "http://localhost:8081/recommendations/users/1",
+			"description": "",
+			"collectionId": "846188c1-358f-a9eb-2273-b72aad9af46e",
+			"responses": [],
+			"rawModeData": "{\n    \"size\" : 5000\n}"
+		},
+		{
+			"id": "38d7231d-0cff-171f-f278-ed0dbefc30c7",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8081/recommendations/users/1",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "846188c1-358f-a9eb-2273-b72aad9af46e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Recommendations for User",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1463646272911,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"size\" : 5000\n}"
+		}
+	]
+}
